@@ -1,2 +1,0 @@
-# MeanStack_Lab
- 
