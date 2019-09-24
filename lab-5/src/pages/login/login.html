@@ -1,0 +1,34 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Firebase app</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="bg">
+  <ion-list>
+    <ion-item>
+      <ion-label floating class ="login">Mail Address</ion-label>
+      <ion-input type ="text"[(ngModel)]="admin.email" id = input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type = "password"[(ngModel)]="admin.password" id = password></ion-input>
+    </ion-item>
+  </ion-list>
+  <div padding style="text-align:center;">
+    <button ion-button (click)="login(admin)">Sign-In</button>
+    <button ion-button (click)="create(admin)">Register</button>
+  </div>
+
+</ion-content>
+
+
+

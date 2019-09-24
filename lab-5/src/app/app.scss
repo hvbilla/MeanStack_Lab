@@ -1,0 +1,29 @@
+
+.bg{
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/20/18/35/sunrise-1756274__340.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.toolbar-background {
+
+  background-color: #488aff;
+}
+
+// all tabs
+.tabs-md .tabbar {
+  background-color: #488aff;
+
+}
+// all tabs texts
+.tabs-md .tab-button-text {
+
+  font-size: 14px;
+  color: black;
+}
+// selected tab
+.tabs-md .tab-button[aria-selected=true] {
+
+  background-color: #fff;
+}

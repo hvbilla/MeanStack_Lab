@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Position Tracing
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg">
+
+  <form (ngSubmit)="LocationSubmit()">
+    <div padding style="text-align:center;">
+      <ion-list>
+        <button ion-button >Track My Position</button>
+      </ion-list>
+    </div>
+
+  </form>
+  <div *ngIf="getGeoLocations != null">
+    <h3> Location History:</h3>
+    <div *ngFor="let position of getGeoLocations" style="align-content: center">
+      <ion-list>
+        <ion-item>
+          Time & Date : {{position.LocationTiming | date:'hh:mm:ss MM/dd/yyyy'}}
+          Latitude : {{position.LocationLatitude}}
+          Longitude : {{position.LocationLongitude}}
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>
